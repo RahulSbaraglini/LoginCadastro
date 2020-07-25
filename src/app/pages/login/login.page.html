@@ -1,0 +1,34 @@
+<ion-content>
+    <ion-slide>
+      <div class="slide-inner ion-padding">
+        <span>Login</span>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="email" placeholder="E-mail"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="password" placeholder="Senha"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-checkbox color="danger"></ion-checkbox>
+          <ion-label>Manter logado</ion-label>
+        </ion-item>
+
+        <ion-button class="ion-margin-top" (click)="login()" color="light" expand="block" color="danger">
+          Login
+        </ion-button>
+
+        <ion-button [routerLink]="['/cadastro']"  class="ion-margin-top" expand="block" color="danger">
+          Cadastro
+        </ion-button>
+      </div>
+  </ion-slide>
+
+  <div class="ocean">
+    <div class="fogo"></div>
+
+
+  </div>
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-content>
+<ion-slide> 
+  <div class="slide-inner ion-padding">
+    <span>Cadastro</span>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="text" placeholder="Nome"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="text" placeholder="CPF"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="text" placeholder="Celular"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-label>Data de nascimento</ion-label>
+      <ion-datetime></ion-datetime>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-label>Gênero</ion-label>
+      <ion-select ok-text="OK" cancel-text="Cancelar">
+        <ion-select-option value="M">Masculino</ion-select-option>
+        <ion-select-option value="F">Feminino</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="email" placeholder="E-mail"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="password" placeholder="Confirmar Senha"></ion-input>
+    </ion-item>
+
+    <ion-button class="ion-margin-top" (click)="salvar()" color="light" expand="block" color="danger">
+      Salvar
+    </ion-button>
+
+    <ion-button [routerLink]="['/login']"  class="ion-margin-top" expand="block" color="danger">
+      Voltar
+    </ion-button>
+  </div>
+</ion-slide>
+</ion-content>
